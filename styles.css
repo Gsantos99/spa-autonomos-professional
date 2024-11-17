@@ -5,42 +5,258 @@
 }
 
 body {
-  font-family: "Arial", sans-serif;
-  background-color: #ffff;
-}
-
-nav {
-  background-color: lightblue;
-  color: #fff;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1rem;
-}
-
-nav ul {
-  list-style-type: none;
-  display: flex;
-  gap: 1rem;
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
 }
 
 section {
-  text-align: center;
   padding: 2rem;
+}
+
+
+.sectionDivider > img {
+  border-radius: 50%;
+  width: 400px;
+  height: 150px;
+}
+
+a {
+  color: white;
+  font-size: 2rem;
+  text-decoration: none;
+}
+
+a:visited {
+  color: white;
+}
+
+a:hover {
+  color: #6f86ff;
+}
+
+li {
+  list-style: none;
+  text-decoration: none;
+}
+
+.off-screen-menu {
+  background-color: rgb(34, 37, 49);
+  height: 100vh;
   width: 100%;
+  max-width: 450px;
+  position: fixed;
+  top: 0;
+  right: -450px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s ease;
+}
+.off-screen-menu.active {
+  right: 0;
+}
+
+.off-screen-menu {
+  background-color: rgb(34, 37, 49);
+  height: 100vh;
+  width: 50%;
+  max-width: 450px;
+  position: fixed;
+  top: 0;
+  right: -450px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 3rem;
+  transition: 0.3s ease;
+}
+.off-screen-menu.active {
+  right: 0;
+}
+
+.off-screen-menu > ul > li {
+  text-align: left;
+  padding: 0.5rem;
+}
+
+nav {
+  padding: 1rem;
+  display: flex;
+  background-color: rgb(34, 37, 49);
+}
+
+.ham-menu {
+  height: 50px;
+  width: 40px;
+  margin-left: auto;
+  position: relative;
+}
+.ham-menu span {
+  height: 5px;
+  width: 100%;
+  background-color: #ffff;
+  border-radius: 25px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  transition: 0.3s ease;
+}
+.ham-menu span:nth-child(1) {
+  top: 25%;
+}
+.ham-menu span:nth-child(3) {
+  top: 75%;
+}
+.ham-menu.active span {
+  background-color: white;
+}
+.ham-menu.active span:nth-child(1) {
+  top: 50%;
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+.ham-menu.active span:nth-child(2) {
+  opacity: 0;
+}
+.ham-menu.active span:nth-child(3) {
+  top: 50%;
+  transform: translate(-50%, -50%) rotate(-45deg);
 }
 
 footer {
-  background-color: #333;
-  color: #fff;
+  background-color: rgb(34, 37, 49);
+  color: white;
   text-align: center;
   padding: 1rem;
 }
 
-.sectionDivider {
+@media (min-width: 768px) {
+  #about {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  #about-text {
+    width: 50%;
+  }
+
+  #about-text p {
+    margin-bottom: 1rem;
+  }
+
+  .sectionDivider {
+    flex-direction: row;
+  }
+
+  .sectionDivider img {
+    width: 250px;
+    height: 250px;
+  }
+
+  .off-screen-menu {
+    max-width: 450px;
+    right: -450px;
+  }
+
+  .off-screen-menu.active {
+    right: 0;
+  }
+
+  a {
+    font-size: 2rem;
+  }
+
+  .ham-menu {
+    height: 50px;
+    width: 40px;
+  }
+
+  .ham-menu span {
+    height: 5px;
+  }
+}
+
+@media (max-width: 430px) {
+  .sectionDivider {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+  }
+
+  .sectionDivider img {
+    width: 200px;
+    height: 200px;
+  }
+}
+
+/* Seção de Contato */
+.contato-section {
+  background-color: #f9f9f9;
+  padding: 2rem;
+  text-align: center;
+}
+
+.contato-section h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.contato-section p {
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+  color: #555;
+}
+
+.contato-form {
+  max-width: 600px;
+  margin: 0 auto;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 1rem;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.form-group label {
+  font-size: 1rem;
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 0.8rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+.btn-enviar {
+  padding: 0.8rem 2rem;
+  font-size: 1rem;
+  color: white;
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-enviar:hover {
+  background-color: #0056b3;
 }

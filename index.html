@@ -7,96 +7,124 @@
     <title>Psicóloga Maria</title>
   </head>
   <body>
-    <nav>
+    <div class="off-screen-menu">
       <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Sobre</a></li>
-        <li><a href="#">Serviços</a></li>
-        <li><a href="#">Benefícios</a></li>
-        <li><a href="#">Depoimentos</a></li>
-        <li><a href="#">Contato</a></li>
+        <li><a href="#about">Sobre</a></li>
+        <li><a href="#services">Serviços</a></li>
+        <li><a href="#benefits">Benefícios</a></li>
+        <li><a href="#testimonials">Depoimentos</a></li>
+        <li><a href="#contacts">Contato</a></li>
       </ul>
+    </div>
+    <nav class="navbar">
+      <div class="ham-menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
     </nav>
     <main>
-      <section>
-        <h1>Psicóloga Maria Vasconcelos</h1>
-        <h2>Seja bem-vindo(a) ao meu site!</h2>
-        <p>
-          Olá! Meu nome é Maria e sou psicóloga. Atendo em meu consultório
-          localizado na cidade de Recife. Se você está passando por algum
-          problema e precisa de ajuda, entre em contato comigo para agendarmos
-          uma consulta. Será um prazer te ajudar!
-        </p>
-      </section>
-      <section>
-        <h3>Sobre</h3>
-        <div class="sectionDivider">
+      <section id="about">
+        <div id="about-text">
+          <h1>Psicóloga Maria Vasconcelos</h1>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore
-            numquam dolorem fugit facilis quisquam quis reiciendis fugiat nihil
-            consequuntur, doloremque deleniti ullam excepturi molestias
-            cupiditate quas voluptatibus quod nesciunt architecto! Lorem ipsum
-            dolor sit amet consectetur adipisicing elit. Labore numquam dolorem
-            fugit facilis quisquam quis reiciendis fugiat nihil consequuntur,
-            doloremque
+            Sou Maria Vasconcelos, psicóloga formada e apaixonada por ajudar
+            pessoas a alcançarem o bem-estar mental e emocional.
           </p>
-
-          <img
-            src="./assets/profile_pic.jpg"
-            alt="foto de perfil"
-            width="250"
-            height="250"
-          />
+          <p>
+            Com 25 anos e em constante atualização na minha área, atualmente
+            curso uma pós-graduação para aprimorar ainda mais o cuidado que
+            ofereço. Cada sessão é conduzida com empatia e respeito, criando um
+            ambiente seguro para que você possa se conhecer melhor, superar
+            desafios e viver de forma mais plena.
+          </p>
+        </div>
+        <div class="sectionDivider">
+          <img src="./assets/profile_pic.jpg" alt="foto de perfil" />
         </div>
       </section>
-      <section>
+      <section id="services">
         <h3>Serviços</h3>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore
-          numquam dolorem fugit facilis quisquam quis reiciendis fugiat nihil
-          consequuntur, doloremque deleniti ullam excepturi molestias cupiditate
-          quas voluptatibus quod nesciunt architecto! Lorem ipsum dolor sit amet
-          consectetur adipisicing elit. Labore numquam dolorem fugit facilis
-          quisquam quis reiciendis fugiat nihil consequuntur, doloremque
+          Ofereço uma variedade de serviços terapêuticos pensados para atender
+          às suas necessidades específicas. Entre eles estão a terapia
+          individual, orientação vocacional e apoio emocional para situações
+          desafiadoras. Também realizo atendimentos online, permitindo que o
+          acompanhamento psicológico se encaixe na sua rotina, com a mesma
+          segurança e confidencialidade do atendimento presencial.
         </p>
       </section>
-      <section>
+      <section id="benefits">
         <h3>Benefícios</h3>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore
-          numquam dolorem fugit facilis quisquam quis reiciendis fugiat nihil
-          consequuntur, doloremque deleniti ullam excepturi molestias cupiditate
-          quas voluptatibus quod nesciunt architecto! Lorem ipsum dolor sit amet
-          consectetur adipisicing elit. Labore numquam dolorem fugit facilis
-          quisquam quis reiciendis fugiat nihil consequuntur, doloremque
+          A terapia é um caminho para compreender melhor a si mesmo, lidar com
+          emoções difíceis e melhorar a qualidade de vida. Juntos, podemos
+          descobrir novas maneiras de enfrentar o estresse, fortalecer sua
+          autoestima e construir relacionamentos mais saudáveis. Meu objetivo é
+          apoiá-lo(a) na sua jornada de crescimento e autoconhecimento, ajudando
+          você a se sentir mais realizado(a) e em paz consigo mesmo(a)
         </p>
       </section>
-      <section>
+      <section id="testimonials">
         <h3>Depoimentos</h3>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore
-          numquam dolorem fugit facilis quisquam quis reiciendis fugiat nihil
-          consequuntur, doloremque deleniti ullam excepturi molestias cupiditate
-          quas voluptatibus quod nesciunt architecto! Lorem ipsum dolor sit amet
-          consectetur adipisicing elit. Labore numquam dolorem fugit facilis
-          quisquam quis reiciendis fugiat nihil consequuntur, doloremque
+          Cada depoimento dos meus pacientes reflete uma história única de
+          transformação e superação. Esses relatos sinceros mostram o impacto
+          positivo do nosso trabalho juntos e oferecem uma perspectiva real
+          sobre os benefícios da terapia. Cada processo é especial e inspira
+          ainda mais meu compromisso com o seu desenvolvimento.
         </p>
       </section>
-      <section>
-        <h3>Contato</h3>
+      <section id="contacts" class="contato-section">
+        <h2>Entre em Contato</h2>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore
-          numquam dolorem fugit facilis quisquam quis reiciendis fugiat nihil
-          consequuntur, doloremque deleniti ullam excepturi molestias cupiditate
-          quas voluptatibus quod nesciunt architecto! Lorem ipsum dolor sit amet
-          consectetur adipisicing elit. Labore numquam dolorem fugit facilis
-          quisquam quis reiciendis fugiat nihil consequuntur, doloremque
+          Está pronto(a) para iniciar sua jornada de autoconhecimento? Preencha
+          o formulário abaixo e eu entrarei em contato o mais breve possível!
         </p>
+
+        <form
+          action="https://formspree.io/f/xeoqzjrq"
+          method="POST"
+          class="contato-form"
+        >
+          <div class="form-group">
+            <label for="name">Seu Nome</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Digite seu nome"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="email">Seu Email</label>
+            <input
+              type="email"
+              id="email"
+              name="_replyto"
+              placeholder="Digite seu email"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="message">Sua Mensagem</label>
+            <textarea
+              id="message"
+              name="message"
+              rows="5"
+              placeholder="Escreva sua mensagem"
+              required
+            ></textarea>
+          </div>
+          <button type="submit" class="btn-enviar">Enviar Mensagem</button>
+        </form>
       </section>
     </main>
     <footer>
       <p>Psicóloga Maria - Todos os direitos reservados</p>
       <p>Desenvolvido por Giulyano Santos</p>
     </footer>
+    <script src="./app.js"></script>
   </body>
 </html>
